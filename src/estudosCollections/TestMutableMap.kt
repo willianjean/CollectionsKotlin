@@ -11,5 +11,12 @@ fun main() {
     repositorioMutableMapOf.create(pedro.nome, pedro)
     repositorioMutableMapOf.create(maria.nome, maria)
 
-    println(repositorioMutableMapOf.findById(joao.nome))
+    println(repositorioMutableMapOf.findById(maria.nome))
+
+    espaco()
+    repositorioMutableMapOf.findAll().forEach{ println(it) }
+
+    espaco()
+    repositorioMutableMapOf.remove(maria.nome)
+    repositorioMutableMapOf.findAll().forEach{ println(it) }
 }
